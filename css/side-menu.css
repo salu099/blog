@@ -1,0 +1,320 @@
+body {
+    color: #777;
+	/* 2017/8 post main section font setting start*/
+	font-family: Microsoft YaHei,"微軟正黑體", "Microsoft JhengHei"; 	
+	font-size: 0.95em;  
+	/* 2017/8 post main section font setting end*/
+}
+
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+/*
+Add transition to containers so they can push in and out.
+*/
+#layout,
+#menu,
+.menu-link {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+/*
+This is the parent `<div>` that contains the menu and the content area.
+*/
+#layout {
+    position: relative;
+    left: 0;
+    padding-left: 0;
+}
+    #layout.active #menu {
+		/*2017/7 adjust 'menu bar width' start*/
+        /* left: 150px; */
+        /* width: 150px; */
+		left: 250px;
+        width: 250px;
+		/*2017/7 adjust 'menu bar width' end*/
+    }
+
+    #layout.active .menu-link {
+		/*2017/7 adjust 'menu bar width' start*/
+        /* left: 150px; */
+		left: 250px;
+		/*2017/7 adjust 'menu bar width' end*/
+    }
+/*
+The content `<div>` is where all your content goes.
+*/
+.content {
+    margin: 0 auto;
+    padding: 0 2em;
+    max-width: 800px;
+    margin-bottom: 50px;
+    line-height: 1.6em;
+}
+
+.header {
+     margin: 0;
+	 /*2017/7 adjust h1 font color start*/
+     /* color: #333; */
+	 color: #FFF;
+	 /*2017/7 adjust h1 font color end*/
+     text-align: center;	/*change font align*/
+	 /*2017/7 add background image start*/
+	 /* background-image: url("/img/banner.jpg") ; */
+	 background-repeat:no-repeat;
+     background-position:center center;  
+	 /* padding: 2.5em 2em 0; */
+	 padding: 18em 2em 0;	 
+	 /* border-bottom: 1px solid #eee; */
+	 /*2017/7 add background image end*/
+	          
+ }
+    .header h1 {
+        margin: 0.2em 0;
+		/*2017/7 adjust fontfamily start*/
+        /* font-size: 3em; */		
+		font-size: 1.8em;	
+		font-weight: 300; 		
+		/*2017/7 adjust fontfamily end*/        
+    }
+     .header h2 {
+		font-weight: 300;
+		 /*2017/7 adjust fontfamily start*/        
+		font-size: 1em;	
+		/*2017/7 adjust fontfamily end*/
+        color: #ccc;
+        padding: 0;
+        margin-top: 0;
+		
+    }
+
+.content-subhead {
+    margin: 50px 0 20px 0;
+    font-weight: 300;
+    color: #888;
+}
+
+
+
+/*
+The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
+appears on the left side of the page.
+*/
+
+#menu {    
+    /*2017/7 adjust 'menu bar width' start*/
+	/* width: 150px; */
+	/* margin-left: -150px;*/ /* "#menu" width */ 
+	margin-left: -250px; /* "#menu" width */
+	width: 250px;
+    /*2017/7 adjust 'menu bar width' end*/
+	position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000; /* so the menu or its navicon stays above all content */
+    background: #191818;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+    /*
+    All anchors inside the menu should be styled like this.
+    */
+    #menu a {
+        color: #999;
+        border: none;
+        padding: 0.6em 0 0.6em 0.6em;
+    }
+
+    /*
+    Remove all background/borders, since we are applying them to #menu.
+    */
+     #menu .pure-menu,
+     #menu .pure-menu ul {
+        border: none;
+        background: transparent;
+    }
+
+    /*
+    Add that light border to separate items into groups.
+    */
+    #menu .pure-menu ul,
+	
+    #menu .pure-menu .menu-item-divided {
+        border-top: 1px solid #333;
+    }
+        /*
+        Change color of the anchor links on hover/focus.
+        */
+        #menu .pure-menu li a:hover,
+        #menu .pure-menu li a:focus {
+            background: #333;
+        }
+
+    /*
+    This styles the selected menu item `<li>`.
+    */
+    #menu .pure-menu-selected,
+    #menu .pure-menu-heading {
+        background: #1f8dd6;
+    }
+        /*
+        This styles a link within a selected menu item `<li>`.
+        */
+        #menu .pure-menu-selected a {
+            color: #fff;
+        }
+
+    /*
+    This styles the menu heading.
+    */
+    #menu .pure-menu-heading {
+        font-size: 110%;
+        color: #fff;
+        margin: 0;
+    }
+
+/* -- Dynamic Button For Responsive Menu -------------------------------------*/
+
+/*
+The button to open/close the Menu is custom-made and not part of Pure. Here's
+how it works:
+*/
+
+/*
+`.menu-link` represents the responsive menu toggle that shows/hides on
+small screens.
+*/
+.menu-link {
+    position: fixed;
+    display: block; /* show this only on small screens */
+    top: 0;
+    left: 0; /* "#menu width" */
+    background: #000;
+    background: rgba(0,0,0,0.7);
+    font-size: 10px; /* change this value to increase/decrease button size */
+    z-index: 10;
+    width: 2em;
+    height: auto;
+    padding: 2.1em 1.6em;
+}
+
+    .menu-link:hover,
+    .menu-link:focus {
+        background: #000;
+    }
+
+    .menu-link span {
+        position: relative;
+        display: block;
+    }
+
+    .menu-link span,
+    .menu-link span:before,
+    .menu-link span:after {
+        background-color: #fff;
+        width: 100%;
+        height: 0.2em;
+    }
+
+        .menu-link span:before,
+        .menu-link span:after {
+            position: absolute;
+            margin-top: -0.6em;
+            content: " ";
+        }
+
+        .menu-link span:after {
+            margin-top: 0.6em;
+        }
+
+		
+/*2017/7 add single post image zone start*/		
+img.smallscreenimg{
+	display:none;
+}
+/*2017/7 add single post image zone end*/		
+
+/* -- Responsive Styles (Media Queries) ------------------------------------- */
+
+/*
+Hides the menu at `48em`, but modify this based on your app's needs.
+*/
+@media (min-width: 48em) {
+
+    .header,
+    .content {
+        padding-left: 2em;
+        padding-right: 2em;
+		
+    }
+
+    #layout {
+		/*2017/7 adjust 'menu bar width' start*/
+        /* padding-left: 150px;*/ /* left col width "#menu" */
+		padding-left: 250px; /* left col width "#menu" */
+		/*2017/7 adjust 'menu bar width' end*/
+        left: 0;
+    }
+    #menu {
+		/*2017/7 adjust 'menu bar width' start*/
+        /* left: 150px; */
+		left: 250px;
+		/*2017/7 adjust 'menu bar width' end*/
+    }
+
+    .menu-link {
+        position: fixed;
+		/*2017/7 adjust 'menu bar width' start*/
+        /* left: 150px; */
+		left: 250px;
+		/*2017/7 adjust 'menu bar width' end*/
+        display: none;
+    }
+
+    #layout.active .menu-link {
+		/*2017/7 adjust 'menu bar width' start*/
+        /* left: 150px; */
+		left: 250px;
+		/*2017/7 adjust 'menu bar width' end*/
+    }
+}
+
+@media (max-width: 48em) {
+    /* Only apply this when the window is small. Otherwise, the following
+    case results in extra padding on the left:
+        * Make the window small.
+        * Tap the menu to trigger the active state.
+        * Make the window large again.
+    */
+    #layout.active {
+        position: relative;
+		/*2017/7 adjust 'menu bar width' start*/
+        /* left: 150px; */
+		left: 250px;
+		/*2017/7 adjust 'menu bar width' end*/
+    }
+	
+	
+	/*2017/7 add single post image zone start*/	
+	/*ref: https://pjchender.blogspot.tw/2015/04/css-3vh-vw.html*/
+	img.featureimg { 
+		display: none; 
+	}
+	img.smallscreenimg { 
+		display: block; 
+		width:84vw;
+	}
+	#postcontentzone img { 
+		width:84vw; 
+	}
+  
+    /*2017/7 add single post image zone end*/
+
+}
