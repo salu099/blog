@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://salu099.github.io/blog/2017/12/2016-japan-kyoto-maple/</loc>
+    <lastmod>2017-12-16T16:25:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://salu099.github.io/blog/2017/11/blog-newsite-build-record/</loc>
     <lastmod>2017-11-13T22:22:00+08:00</lastmod>
   </url>
@@ -506,6 +511,12 @@
   </url>
   
   <url>
+    <loc>https://salu099.github.io/blog/topics/2016%E4%BA%AC%E9%83%BD/</loc>
+    <lastmod>2017-12-16T16:25:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://salu099.github.io/blog/tags/435%E8%97%9D%E6%96%87%E7%89%B9%E5%8D%80/</loc>
     <lastmod>2013-09-17T21:10:00+08:00</lastmod>
     <priority>0</priority>
@@ -573,7 +584,7 @@
   
   <url>
     <loc>https://salu099.github.io/blog/post/</loc>
-    <lastmod>2017-11-13T22:22:00+08:00</lastmod>
+    <lastmod>2017-12-16T16:25:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -656,6 +667,12 @@
   </url>
   
   <url>
+    <loc>https://salu099.github.io/blog/tags/%E4%B8%8B%E9%B4%A8%E7%A5%9E%E7%A4%BE/</loc>
+    <lastmod>2017-12-16T16:25:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://salu099.github.io/blog/tags/%E4%B8%8D%E5%8E%AD%E4%BA%AD/</loc>
     <lastmod>2013-12-11T22:09:32+08:00</lastmod>
     <priority>0</priority>
@@ -705,7 +722,7 @@
   
   <url>
     <loc>https://salu099.github.io/blog/tags/%E4%BA%AC%E9%83%BD/</loc>
-    <lastmod>2013-11-09T10:39:35+08:00</lastmod>
+    <lastmod>2017-12-16T16:25:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -730,6 +747,18 @@
   <url>
     <loc>https://salu099.github.io/blog/tags/%E5%85%89%E4%B9%8B%E5%A1%94/</loc>
     <lastmod>2009-07-02T21:42:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://salu099.github.io/blog/tags/%E5%85%89%E6%98%8E%E5%AF%BA/</loc>
+    <lastmod>2017-12-16T16:25:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://salu099.github.io/blog/tags/%E5%85%89%E6%98%8E%E9%99%A2/</loc>
+    <lastmod>2017-12-16T16:25:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -784,6 +813,12 @@
   <url>
     <loc>https://salu099.github.io/blog/tags/%E5%8C%97%E6%8A%95/</loc>
     <lastmod>2014-05-10T08:49:54+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://salu099.github.io/blog/tags/%E5%8C%97%E9%87%8E%E5%A4%A9%E6%BB%BF%E5%AE%AE/</loc>
+    <lastmod>2017-12-16T16:25:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1118,6 +1153,18 @@
   </url>
   
   <url>
+    <loc>https://salu099.github.io/blog/tags/%E5%AF%B6%E5%9A%B4%E9%99%A2/</loc>
+    <lastmod>2017-12-16T16:25:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://salu099.github.io/blog/tags/%E5%AF%B6%E7%AD%90%E9%99%A2/</loc>
+    <lastmod>2017-12-16T16:25:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://salu099.github.io/blog/tags/%E5%B0%8F%E5%8D%97%E6%B8%AF%E5%B1%B1/</loc>
     <lastmod>2015-06-20T20:48:17+08:00</lastmod>
     <priority>0</priority>
@@ -1125,7 +1172,7 @@
   
   <url>
     <loc>https://salu099.github.io/blog/</loc>
-    <lastmod>2017-11-13T22:22:00+08:00</lastmod>
+    <lastmod>2017-12-16T16:25:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1138,6 +1185,12 @@
   <url>
     <loc>https://salu099.github.io/blog/tags/%E5%B0%8F%E5%A4%AA%E9%AD%AF%E9%96%A3/</loc>
     <lastmod>2009-07-09T03:30:28+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://salu099.github.io/blog/tags/%E5%B0%8F%E6%A3%AE/</loc>
+    <lastmod>2017-12-16T16:25:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1305,7 +1358,7 @@
   
   <url>
     <loc>https://salu099.github.io/blog/tags/%E6%97%A5%E6%9C%AC/</loc>
-    <lastmod>2013-11-09T10:39:35+08:00</lastmod>
+    <lastmod>2017-12-16T16:25:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1376,6 +1429,12 @@
   </url>
   
   <url>
+    <loc>https://salu099.github.io/blog/tags/%E6%9C%AC%E8%83%BD%E5%AF%BA/</loc>
+    <lastmod>2017-12-16T16:25:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://salu099.github.io/blog/tags/%E6%9C%AD%E5%B9%8C%E5%86%86%E5%B1%B1%E5%8B%95%E7%89%A9%E5%9C%92%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3/</loc>
     <lastmod>2013-10-24T22:39:35+08:00</lastmod>
     <priority>0</priority>
@@ -1425,7 +1484,7 @@
   
   <url>
     <loc>https://salu099.github.io/blog/tags/%E6%A5%93/</loc>
-    <lastmod>2014-03-17T20:33:08+08:00</lastmod>
+    <lastmod>2017-12-16T16:25:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1474,6 +1533,12 @@
   <url>
     <loc>https://salu099.github.io/blog/tags/%E6%B2%B9%E6%A1%90%E8%8A%B1/</loc>
     <lastmod>2014-05-05T20:26:25+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://salu099.github.io/blog/tags/%E6%B4%9B%E5%8C%A0/</loc>
+    <lastmod>2017-12-16T16:25:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1808,6 +1873,12 @@
   </url>
   
   <url>
+    <loc>https://salu099.github.io/blog/tags/%E8%A1%8C%E7%A8%8B/</loc>
+    <lastmod>2017-12-16T16:25:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://salu099.github.io/blog/tags/%E8%A5%BF%E3%81%AE%E4%B8%B8%E5%BA%AD/</loc>
     <lastmod>2013-05-21T21:11:00+08:00</lastmod>
     <priority>0</priority>
@@ -1935,7 +2006,7 @@
   
   <url>
     <loc>https://salu099.github.io/blog/tags/%E9%97%9C%E8%A5%BF/</loc>
-    <lastmod>2013-11-09T10:39:35+08:00</lastmod>
+    <lastmod>2017-12-16T16:25:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2032,6 +2103,12 @@
   <url>
     <loc>https://salu099.github.io/blog/tags/%E9%B3%B3%E5%B1%B1%E5%9F%BA%E7%9D%A3%E9%95%B7%E8%80%81%E6%95%99%E6%9C%83/</loc>
     <lastmod>2009-07-02T21:42:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://salu099.github.io/blog/tags/%E9%B9%BF%E7%8E%8B%E9%99%A2/</loc>
+    <lastmod>2017-12-16T16:25:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
