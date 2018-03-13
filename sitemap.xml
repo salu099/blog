@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://salu099.github.io/blog/2018/03/2016-japan-kyoto-maple-komyoji/</loc>
+    <lastmod>2018-03-13T23:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://salu099.github.io/blog/2018/02/2016-japan-kyoto-maple-hogonin/</loc>
     <lastmod>2018-02-02T23:00:00+08:00</lastmod>
   </url>
@@ -527,7 +532,7 @@
   
   <url>
     <loc>https://salu099.github.io/blog/topics/2016%E4%BA%AC%E9%83%BD/</loc>
-    <lastmod>2018-02-02T23:00:00+08:00</lastmod>
+    <lastmod>2018-03-13T23:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -599,7 +604,7 @@
   
   <url>
     <loc>https://salu099.github.io/blog/post/</loc>
-    <lastmod>2018-02-02T23:00:00+08:00</lastmod>
+    <lastmod>2018-03-13T23:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -731,7 +736,7 @@
   
   <url>
     <loc>https://salu099.github.io/blog/tags/%E4%BA%AC%E9%83%BD/</loc>
-    <lastmod>2018-02-02T23:00:00+08:00</lastmod>
+    <lastmod>2018-03-13T23:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -756,6 +761,12 @@
   <url>
     <loc>https://salu099.github.io/blog/tags/%E5%85%89%E4%B9%8B%E5%A1%94/</loc>
     <lastmod>2009-07-02T21:42:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://salu099.github.io/blog/tags/%E5%85%89%E6%98%8E%E5%AF%BA/</loc>
+    <lastmod>2018-03-13T23:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1169,7 +1180,7 @@
   
   <url>
     <loc>https://salu099.github.io/blog/</loc>
-    <lastmod>2018-02-02T23:00:00+08:00</lastmod>
+    <lastmod>2018-03-13T23:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1355,7 +1366,7 @@
   
   <url>
     <loc>https://salu099.github.io/blog/tags/%E6%97%A5%E6%9C%AC/</loc>
-    <lastmod>2018-02-02T23:00:00+08:00</lastmod>
+    <lastmod>2018-03-13T23:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1475,7 +1486,7 @@
   
   <url>
     <loc>https://salu099.github.io/blog/tags/%E6%A5%93/</loc>
-    <lastmod>2018-01-29T06:45:00+08:00</lastmod>
+    <lastmod>2018-03-13T23:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1697,7 +1708,7 @@
   
   <url>
     <loc>https://salu099.github.io/blog/tags/%E7%A7%8B/</loc>
-    <lastmod>2018-02-02T23:00:00+08:00</lastmod>
+    <lastmod>2018-03-13T23:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1991,7 +2002,7 @@
   
   <url>
     <loc>https://salu099.github.io/blog/tags/%E9%97%9C%E8%A5%BF/</loc>
-    <lastmod>2018-02-02T23:00:00+08:00</lastmod>
+    <lastmod>2018-03-13T23:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
