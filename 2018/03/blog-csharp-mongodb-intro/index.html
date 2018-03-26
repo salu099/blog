@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-tw">
+<meta content="c#, mongodb, 雲端資料庫" name="keywords">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    
+  
+  <meta name="description" content="使用c#連接mongodb雲端資料庫-簡介">
+  
+  
+  <meta name="generator" content="Hugo 0.24.1" />
+
+  <title>使用c#連接mongodb雲端資料庫 - (一)簡介 &middot; 小卷的胡言亂語</title>
+
+  
+  <meta property="og:language" content="zh-TW"/>
+  <meta property="og:site_name" content="使用c#連接mongodb雲端資料庫 - (一)簡介"/>  
+  <meta property="og:title" content="使用c#連接mongodb雲端資料庫 - (一)簡介" />
+  <meta property="og:description" content="使用c#連接mongodb雲端資料庫-簡介" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://salu099.github.io/blog/2018/03/blog-csharp-mongodb-intro/" />
+  
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://salu099.github.io/blog/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://salu099.github.io/blog/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://salu099.github.io/blog/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  
+
+<link rel="shortcut icon" href="https://salu099.github.io/blog/img/favicon_5.ico" type="image/x-icon" />
+<link rel="bookmark" href="https://salu099.github.io/blog/img/favicon_5.ico"/>
+
+
+  
+  
+
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>    
+  <link rel="stylesheet" href="https://salu099.github.io/blog/css/menutree/menutree.css" />
+  
+    
+  <script>
+  <!--2017/7 add 'go to top' in header.html start-->
+  <!--ref: https:
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("myToTopBtn").style.display = "block";
+		} else {
+			document.getElementById("myToTopBtn").style.display = "none";
+		}
+	}
+
+	
+	function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}	
+	<!--2017/7 add 'go to top' in header.html end-->
+	<!--2017/7 add site visitor counter start: change to use histats-->
+	
+	<!-- $(document).ready(function(){ -->
+		<!-- $('a').click(function() { -->
+			<!-- if ($(this).hasClass('sociallink')) {}else{ -->
+				<!-- $.get("https://script.google.com/macros/s/AKfycbyxudu5idxrDOAUO7QNuEmSq0jljc-5BqjN56h85zlx3Nv9X48/exec", -->
+					<!-- function (data) {return false;} -->
+				<!-- ); -->
+			<!-- } -->
+		<!-- }); -->
+    <!-- }); -->
+	
+	
+	
+	<!-- $.get("https://script.google.com/macros/s/AKfycbxl_kU3_ClDtWRlT22AP3y4hdTxsS7GWxSLuv6gmXuk3sn6p2M/exec", -->
+		<!-- function (data) {        			 -->
+			<!-- $("#visitornum").html(data); -->
+		<!-- } -->
+	<!-- ); -->
+	<!--2017/7 add site visitor counter end: change to use histats-->
+	
+	<!--2017/9 add disqus controler button s-->
+	<!--https:
+	$(document).ready(function() {	
+    $('.show-comments').on('click', function(){
+          var disqus_shortname = 'salu099'; 
+
+          
+          $.ajax({
+                  type: "GET",
+                  url: "https://" + disqus_shortname + ".disqus.com/embed.js",
+                  dataType: "script",
+                  cache: true
+          });
+          
+          $(this).fadeOut();
+		});		
+	});			
+	<!--2017/9 add disqus controler button e-->
+	
+  </script>
+  
+  <style tyle="text/css">
+  @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+  .content{font-family: 'Noto Sans TC', sans-serif;}
+  </style>
+  
+  
+</head>
+
+
+<body>
+
+<button onclick="topFunction()" id="myToTopBtn" title="Go to top">TOP</button>
+
+
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+
+<div id="menu">
+
+  
+    
+  
+  <div class="avatarcontainer">  
+	<div class="divavatar">
+		<img src="https://salu099.github.io/blog/img/headimg.png" alt="salu099" style="width:90px;height:90px;" class="avatar">
+	</div>  
+	<a class="pure-menu-heading brand" href="https://salu099.github.io/blog/">旗津烤小卷/傻露</a>  
+	<span>(salu099)</span>
+  </div>
+    
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">		
+          <a class="pure-menu-link" href="https://salu099.github.io/blog/"><i class='fa fa-home fa-fw'></i>首頁</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">		
+          <a class="pure-menu-link" href="https://salu099.github.io/blog/post/"><i class='fa fa-archive fa-fw'></i>文章列表</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">		
+          <a class="pure-menu-link" href="https://salu099.github.io/blog/tags/"><i class='fa fa-tags fa-fw'></i>文章標籤</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+  
+  
+
+ 
+<ul id="tree1">
+	<li ><a href="#" style="margin-left:-8px">文章分類</a>
+		<ul> 
+		
+			<li>台灣
+				<ul>
+													
+						
+						<li trclass="trhyzone">
+						
+						<a href="https://salu099.github.io/blog/topics/%E6%92%AE%E3%82%8B"><i class='fa fa-angle-right'></i>撮る</a><span>(0)</span>
+						</li>
+													
+						
+						<li trclass="trhyzone">
+						
+						<a href="https://salu099.github.io/blog/topics/%E9%A3%9F%E3%81%B9%E3%82%8B"><i class='fa fa-angle-right'></i>食べる</a><span>(0)</span>
+						</li>
+					
+				</ul>
+			</li>
+		
+			<li>國外
+				<ul>
+													
+						
+						<li trclass="trhyzone">
+						
+						<a href="https://salu099.github.io/blog/topics/%E6%97%A5%E6%97%85%E7%AD%86%E8%A8%98"><i class='fa fa-angle-right'></i>日旅筆記</a><span>(0)</span>
+						</li>
+													
+						
+						<li trclass="trhyzone">
+						
+						<a href="https://salu099.github.io/blog/topics/%E6%AD%90%E6%97%85%E7%AD%86%E8%A8%98"><i class='fa fa-angle-right'></i>歐旅筆記</a><span>(0)</span>
+						</li>
+													
+						
+						<li trclass="trhyzone">
+						
+						<a href="https://salu099.github.io/blog/topics/2018%E5%8C%97%E4%B9%9D%E5%B7%9E%E9%97%9C%E8%A5%BF"><i class='fa fa-angle-right'></i>2018北九州關西</a><span>(0)</span>
+						</li>
+													
+						
+						<li trclass="trhyzone">
+						
+						<a href="https://salu099.github.io/blog/topics/2017%E5%90%8D%E5%8F%A4%E5%B1%8B%E4%BA%AC%E9%83%BD"><i class='fa fa-angle-right'></i>2017名古屋京都</a><span>(0)</span>
+						</li>
+													
+						
+						<li trclass="trhyzone">
+						
+						<a href="https://salu099.github.io/blog/topics/2017%E6%B2%96%E7%B9%A9"><i class='fa fa-angle-right'></i>2017沖繩</a><span>(0)</span>
+						</li>
+													
+						
+						<li trclass="trhyzone">
+						
+						<a href="https://salu099.github.io/blog/topics/2016%E4%BA%AC%E9%83%BD"><i class='fa fa-angle-right'></i>2016京都</a><span>(0)</span>
+						</li>
+													
+						
+						<li trclass="trhyzone">
+						
+						<a href="https://salu099.github.io/blog/topics/2016%E9%AB%98%E6%9D%BE%E7%A5%9E%E6%88%B6"><i class='fa fa-angle-right'></i>2016高松神戶</a><span>(0)</span>
+						</li>
+													
+						
+						<li trclass="trhyzone">
+						
+						<a href="https://salu099.github.io/blog/topics/2015%E5%BE%B7%E5%9C%8B%E5%A5%A7%E5%9C%B0%E5%88%A9"><i class='fa fa-angle-right'></i>2015德國奧地利</a><span>(0)</span>
+						</li>
+													
+						
+						<li trclass="trhyzone">
+						
+						<a href="https://salu099.github.io/blog/topics/2014%E6%9D%B1%E4%BA%AC"><i class='fa fa-angle-right'></i>2014東京</a><span>(0)</span>
+						</li>
+													
+						
+						<li trclass="trhyzone">
+						
+						<a href="https://salu099.github.io/blog/topics/2013%E4%B9%9D%E5%B7%9E"><i class='fa fa-angle-right'></i>2013九州</a><span>(0)</span>
+						</li>
+													
+						
+						<li trclass="trhyzone">
+						
+						<a href="https://salu099.github.io/blog/topics/2013%E4%BA%AC%E9%98%AA%E7%A5%9E%E5%A5%88"><i class='fa fa-angle-right'></i>2013京阪神奈</a><span>(0)</span>
+						</li>
+													
+						
+						<li trclass="trhyzone">
+						
+						<a href="https://salu099.github.io/blog/topics/2012%E4%BA%AC%E9%98%AA"><i class='fa fa-angle-right'></i>2012京阪</a><span>(0)</span>
+						</li>
+													
+						
+						<li trclass="trhyzone">
+						
+						<a href="https://salu099.github.io/blog/topics/2011%E5%8C%97%E6%B5%B7%E9%81%93"><i class='fa fa-angle-right'></i>2011北海道</a><span>(0)</span>
+						</li>
+													
+						
+						<li trclass="trhyzone">
+						
+						<a href="https://salu099.github.io/blog/topics/2007%E4%BA%AC%E9%98%AA"><i class='fa fa-angle-right'></i>2007京阪</a><span>(0)</span>
+						</li>
+					
+				</ul>
+			</li>
+			
+			<li>隨手記
+				<ul>
+													
+						
+						<li trclass="trhyzone">
+						
+						<a href="https://salu099.github.io/blog/topics/%E5%BF%83%E6%83%85%E9%9B%9C%E8%A8%98"><i class='fa fa-angle-right'></i>心情雜記</a><span>(0)</span>
+						</li>
+													
+						
+						<li trclass="trhyzone">
+						
+						<a href="https://salu099.github.io/blog/topics/%E5%BB%9A%E5%A8%98%E7%AD%86%E8%A8%98"><i class='fa fa-angle-right'></i>廚娘筆記</a><span>(0)</span>
+						</li>
+													
+						
+						<li trclass="trhyzone">
+						
+						<a href="https://salu099.github.io/blog/topics/%E7%A8%8B%E5%BC%8F%E7%AD%86%E8%A8%98"><i class='fa fa-angle-right'></i>程式筆記</a><span>(0)</span>
+						</li>
+													
+						
+						<li trclass="trhyzone">
+						
+						<a href="https://salu099.github.io/blog/topics/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%BB%BA%E7%BD%AE"><i class='fa fa-angle-right'></i>部落格建置</a><span>(0)</span>
+						</li>
+					
+				</ul>
+			</li>			
+			
+			
+		</ul>
+	</li>                
+</ul>
+
+<div id="existtopiczone" style="display:none">
+	
+		
+            <li trclass="trhyzone">
+                
+                <a href="https://salu099.github.io/blog/topics/2013%E4%BA%AC%E9%98%AA%E7%A5%9E%E5%A5%88">
+                    2013京阪神奈
+                </a>
+                <span >(22)</span>
+            </li>
+        
+            <li trclass="trhyzone">
+                
+                <a href="https://salu099.github.io/blog/topics/2016%E4%BA%AC%E9%83%BD">
+                    2016京都
+                </a>
+                <span >(6)</span>
+            </li>
+        
+            <li trclass="trhyzone">
+                
+                <a href="https://salu099.github.io/blog/topics/%E6%92%AE%E3%82%8B">
+                    撮る
+                </a>
+                <span >(51)</span>
+            </li>
+        
+            <li trclass="trhyzone">
+                
+                <a href="https://salu099.github.io/blog/topics/%E7%A8%8B%E5%BC%8F%E7%AD%86%E8%A8%98">
+                    程式筆記
+                </a>
+                <span >(1)</span>
+            </li>
+        
+            <li trclass="trhyzone">
+                
+                <a href="https://salu099.github.io/blog/topics/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%BB%BA%E7%BD%AE">
+                    部落格建置
+                </a>
+                <span >(2)</span>
+            </li>
+        
+            <li trclass="trhyzone">
+                
+                <a href="https://salu099.github.io/blog/topics/%E9%A3%9F%E3%81%B9%E3%82%8B">
+                    食べる
+                </a>
+                <span >(22)</span>
+            </li>
+        
+	
+</div>
+
+
+
+  <script>
+   
+	$.fn.extend({
+    treed: function (o) {
+      
+      
+
+      var openedClass = 'fa fa-folder-open icon-lg';
+      var closedClass = 'fa fa-folder icon-lg';
+      
+      if (typeof o != 'undefined'){
+        if (typeof o.openedClass != 'undefined'){
+        openedClass = o.openedClass;
+        }
+        if (typeof o.closedClass != 'undefined'){
+        closedClass = o.closedClass;
+        }
+      };
+      
+        
+        var tree = $(this);
+        tree.addClass("tree");
+        tree.find('li').has("ul").each(function () {
+            var branch = $(this); 
+            branch.prepend("<i class='indicator glyphicon " + closedClass + "'></i>");
+            branch.addClass('branch');
+            branch.on('click', function (e) {
+                if (this == e.target) {
+                    var icon = $(this).children('i:first');
+                    icon.toggleClass(openedClass + " " + closedClass);
+                    $(this).children().children().toggle();
+                }
+            })
+            branch.children().children().toggle();
+        });
+        
+      tree.find('.branch .indicator').each(function(){
+        $(this).on('click', function () {
+            $(this).closest('li').click();
+        });
+      });
+        
+        tree.find('.branch>a').each(function () {
+            $(this).on('click', function (e) {
+                $(this).closest('li').click();
+                e.preventDefault();
+            });
+        });
+        
+        tree.find('.branch>button').each(function () {
+            $(this).on('click', function (e) {
+                $(this).closest('li').click();
+                e.preventDefault();
+            });
+        });
+    }
+});
+
+
+$('#tree1').treed();
+ 
+
+ 
+
+
+
+
+
+
+a_group = $('#tree1 li[trclass="trhyzone"]').each(function(){      
+    var resultvl = comparison($(this).find('a').text().trim());    
+    if(resultvl === ''){
+		$(this).children('a').removeAttr('href');	
+    }else{      
+		$(this).find('span').text(resultvl);    
+		$(this).children('a').hover(function() {	
+			$(this).addClass("topichyperlink");
+		}, function() {
+			$(this).removeClass("topichyperlink");
+		});
+    }
+});
+
+ 
+function comparison(fdname){
+	var result = '';
+	$('#existtopiczone li[trclass="trhyzone"]').each(function(){         
+      if(fdname === $(this).find('a').text().trim()){      	
+      	result= $(this).find('span').text().trim();	
+      }      
+    });
+    return result;
+}
+ 
+
+  </script>
+  
+  
+<div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+	
+	
+	
+	
+    <li class="pure-menu-item">
+      <a class="pure-menu-link sociallink" href="https://salu099.github.io/mygallery/about.html" target="_blank"><i class="fa fa-address-book-o fa-fw"></i>關於我</a>
+    </li>
+    
+	
+	
+    <li class="pure-menu-item">
+      <a class="pure-menu-link sociallink" href="https://salu099.github.io/mygallery/index.html" target="_blank"><i class="fa fa-picture-o fa-fw"></i>網路相簿</a>
+    </li>
+    	
+	
+	
+    <li class="pure-menu-item">
+      <a class="pure-menu-link sociallink" href="https://salu099.github.io/picasahtmltool/" target="_blank"><i class="fa fa-file-image-o fa-fw"></i>Picasa Tool</a>
+    </li>
+    
+
+	
+    <li class="pure-menu-item">
+      <a class="pure-menu-link sociallink" href="https://salu099.github.io/postool/" target="_blank"><i class="fa fa-file-code-o fa-fw"></i>Blog Tool</a>
+    </li>
+    
+	
+	
+    <li class="pure-menu-item">
+	
+      
+	  <a class="pure-menu-link sociallink" href="https://github.com/salu099" target="_blank"><i class="fa fa-github fa-fw"></i>GitHub</a>
+	  
+    </li>
+    
+	
+	
+	
+	
+	    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+
+  
+  <div>
+    
+  </div>
+  <div class="small-print">
+    
+	<a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/"><img alt="創用 CC 授權條款" style="border-width:0" src="https://i.creativecommons.org/l/by-nd/4.0/80x15.png" /></a><br />本著作係採用<a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/">創用 CC 姓名標示-禁止改作 4.0 國際 授權條款</a>授權.
+  </div>
+  
+  
+  <div class="small-print">
+    <small>Salu099 &copy; 2017. All rights reserved.</small>	
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+	
+	<br/><br/>
+	
+	
+	
+	<div>
+	
+	<a href="https://salu099.github.io/blog/" alt="frontpage hit counter" target="_blank" >
+	<img  src="//sstatic1.histats.com/0.gif?3898768&101" alt="frontpage hit counter" border="0">
+	
+	</div>
+	
+  </div>
+</div>
+
+    
+</div>
+
+
+  <div id="main">
+
+
+
+
+
+  
+<div class="header" style="background-image:url('https://lh3.googleusercontent.com/-dK7pYxCnhLA/WbKOyKQHqSI/AAAAAAAAWDM/ZLe7yThctmADiH-qrqGfTJn7US4szsluwCHMYBhgL/s1350/banner.jpg');">
+  <h1><a style="text-decoration: none;color: #FFF;" href="https://salu099.github.io/blog/">小卷的胡言亂語</a></h1>
+  <h2>隨心。隨興。隨喜。隨緣</h2>
+  <br/><br/>
+</div>  
+  
+  
+  
+    
+
+<div class="content">
+  
+  <h2>使用c#連接mongodb雲端資料庫 - (一)簡介</h2>
+  
+  
+  <div class="post-meta">  
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+	
+    
+	    <time>Mar 26, 2018</time>
+				
+  </div>
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    			
+      <a class="post-taxonomy-topic" href="https://salu099.github.io/blog/topics/%E7%A8%8B%E5%BC%8F%E7%AD%86%E8%A8%98">程式筆記</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://salu099.github.io/blog/tags/c">c#</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://salu099.github.io/blog/tags/mongodb">mongodb</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://salu099.github.io/blog/tags/%E9%9B%B2%E7%AB%AF%E8%B3%87%E6%96%99%E5%BA%AB">雲端資料庫</a>
+    
+  </div>
+  
+    
+  
+  
+  
+  <div>
+	
+  </div>
+  
+</div>
+  
+  
+  
+  
+  
+  <div id="postcontentzone"><p>這陣子研究了一下如何使用c#連接mongodb雲端資料庫，紀錄一下心得。<br />
+首先先從幾項工具開始介紹吧。</p>
+
+<h3 id="1-mlab">1、mlab</h3>
+
+<hr />
+
+<p><a href="https://mlab.com/" target="_blank">mlab官網</a><br />
+- mongodb的雲端免費server服務<br />
+- free的容量是0.5GB<br />
+- 其他的雲端服務者：MongoDB Atlas(free：512MB)</p>
+
+<p>mongodb為一open source的NoSQL資料庫，由key+value組成(Dictionary的概念)，<br />
+結構類似JSON，是一種稱作BSON的結構；除雲端版外，亦有電腦版可下載至本機使用。<br />
+在mongodb中，一筆資料為document，資料表為collection，亦即由documents組成。<br />
+欄位為field，每一筆資料可以由一個至多個欄位組成(不一定每筆資料的欄位數相同)。<br />
+因mongodb為NoSQL資料庫，故建立資料表時可以不需先建立欄位，直接於資料新增、更新時指定即可。<br />
+本文記錄由c#連結雲端mongodb的服務，雲端資料庫利用mlab，需於mlab中註冊帳號後，建立資料庫(database)、資料表(table)、使用者(username)。</p>
+
+<h4 id="mlab註冊與新增資料庫">mlab註冊與新增資料庫</h4>
+
+<p>1.點選官網右上角[SIGN UP]<br />
+<img src='https://lh3.googleusercontent.com/-rhfY7JtceFw/WrjMjzB442I/AAAAAAAAWKw/Ul8kSV8NV48rOR7st448Fe6b3TPe4zH6gCHMYBhgL/s800/mlabregister.jpg' alt='mongodb mlab registar' /><br/></p>
+
+<p>2.填寫註冊資訊<br />
+其中username為日後登入時會使用的帳號<br />
+<img src='https://lh3.googleusercontent.com/-t4y_SMZfC10/WrjMkPaTTxI/AAAAAAAAWK8/cZpmf8xhYa0AU5mZ_kRAa88spSWsPa9XACHMYBhgL/s800/mlabregister_2.jpg' alt='mongodb mlab registar' /><br/></p>
+
+<p>3.新增資料庫(database)、資料表(table)、使用者(username)<br />
+註冊並登入後，看到[Create New]按鈕按下，即會出現輸入畫面以新增資料庫<br />
+<img src='https://lh3.googleusercontent.com/-YM5SCLGv6To/WrjMkpF6n8I/AAAAAAAAWK0/PupcEIl899AbtWjxrQQTAGz-nj7MtQvOQCHMYBhgL/s800/mlabregister_3.jpg' alt='mongodb mlab registar' /><br/></p>
+
+<p>(1)因只是實驗性使用，故選擇sandbox即可，是免費的。至於伺服器要放在誰身上，隨意選擇<br />
+<img src='https://lh3.googleusercontent.com/-NohFqt0zqrs/WrjMlrKBH4I/AAAAAAAAWK8/LxDXzanH_j4NegmY5HpSjChv2-FysQdYACHMYBhgL/s800/mlabregister_4.jpg' alt='mongodb mlab registar' /><br/></p>
+
+<p>(2)新增後使用者介面上會多出一筆資料，即為你剛建立的資料庫。<br />
+  <img src='https://lh3.googleusercontent.com/-9aRzcaFrrME/WrjMlCNJlsI/AAAAAAAAWK4/GLCjUUQ6WTk3StbVq6rtk2wS-ZO8yPFbQCHMYBhgL/s800/mlabregister_5.jpg' alt='mongodb mlab registar' /><br/><br />
+(3)建立好資料庫以後，請建立使用者<br />
+  <img src='https://lh3.googleusercontent.com/-SV5mlSboHNk/WrjMmJcVJnI/AAAAAAAAWLA/QrrwuV1_j5oiPjdfJZRoork2jM5cIE-_ACHMYBhgL/s800/mlabregister_6.jpg' alt='mongodb mlab registar' /><br/><br />
+(4)回到使用者介面，看到上方區塊提供了連線字串，之後程式就能以此與資料庫做互動<br />
+  <img src='https://lh3.googleusercontent.com/-W3zz2A1g5zI/WrjMmkN-xRI/AAAAAAAAWLE/m5NUp_zTwfAGTVmfuq73hso9AKixWpWywCHMYBhgL/s800/mlabregister_7.jpg' alt='mongodb mlab registar' /><br/></p>
+
+<h3 id="2-robo3t">2、robo3T</h3>
+
+<hr />
+
+<p><a href="https://robomongo.org/" target="_blank">robo3T官網</a><br />
+- mongodb的GUI manager，能檢視mongodb當中的資料(前身為robomongo)<br />
+- 因於mlab中查看、尋找資料並不是那麼便利，故建議可以下載此工具以便查看資料庫內容。</p>
+
+<p>官網當中找到[Download Robo 3T]的按鈕按下後，選擇作業系統後下載。有關此軟體如何使用可上網搜尋相關文章，此篇就不多做教學。<br />
+<img src='https://lh3.googleusercontent.com/-j_3Cf2_EcNo/WrjMjYZbZPI/AAAAAAAAWK8/Or9Kqs8SmrAToyEgzGVhxjG6Fq6F_vukQCHMYBhgL/s800/robo3Tregister.jpg' alt='Robo 3T mongodb' /><br/></p>
+
+<h3 id="3-c-driver">3、c# driver</h3>
+
+<hr />
+
+<p><a href="http://mongodb.github.io/mongo-csharp-driver/2.2/getting_started/" target="_blank">mongodb .net driver官網</a><br />
+在專案當中連接mongodb之前，最重要的就是下載c# driver。<br />
+於你的專案中開啟nuget管理工具後搜尋並下載[MongoDB.Driver]。<br />
+注意目前版本必須在.net4.5以上的環境才可執行。(請參考<a href="http://mongodb.github.io/mongo-csharp-driver/2.2/getting_started/installation/" target="_blank">官方下載說明</a>)</p>
+
+<h4 id="相關文件">相關文件</h4>
+
+<p>官方文件對於基本使用的說明蠻清楚的，另因為mongodb .net driver舊版本與新版本差異頗大，<br />
+故建議有開發需求者，還是看官方文件吧，<br />
+網路上多數的教學文都是較舊版本，無法使用於新版driver。<br />
+以下說明一下傻露參考的幾份文件：</p>
+
+<ul>
+<li><p><a href="http://mongodb.github.io/mongo-csharp-driver/2.2/?jmp=docs&_ga=2.132707086.1891451934.1521713560-897546956.1520241667" target="_blank">Quick Tour：</a><br />
+所有最基本的需求，包含如何連線、資料的CRUD(增刪修查詢)，都在這裡有介紹，如果不是使用太複雜的功能，在這個頁面當中都能查詢到。時間不多、要快速上手者可以從此份文件開始。<br />
+另外，mongodb對於較龐大資料量的處理，也有非同步的處理方式(如此份文件有看到await開頭的寫法，即為非同步的處理)。若不需要非同步處理，採一般寫法即可。</p></li>
+
+<li><p><a href="http://mongodb.github.io/mongo-csharp-driver/2.2/reference/" target="_blank">Reference：</a><br />
+如果需要再深入的了解，比如想知道如何結合LINQ做集合的處理、BSON到底是甚麼?在這個頁面中可以找到相關資訊。</p></li>
+
+<li><p><a href="http://api.mongodb.com/csharp/2.2/html/R_Project_CSharpDriverDocs.htm" target="_blank">API Documentation</a><br />
+如果還有需要更進階的操作資料庫，而在上面兩份文件不敷需求時，<br />
+例如想知道傳入的資料型態很複雜，key對應的資料是一個array，該如何操作?那麼請直接進入此頁面(即mongodb .net driver官網內的[API Documentation])。<br />
+不過，這個頁面無提供相關範例可以參考，故可能需要花較多時間實驗。</p></li>
+</ul>
+
+<p>以上紀錄一些基本會使用到的工具，下一篇則對實作做紀錄。</p></div>
+  
+  
+  <br/>
+  <div>
+	<iframe src='' scrolling='no' frameborder='0' style='width:150px; height:20px;' allowTransparency='true' onload='this.src="https://www.facebook.com/plugins/like.php?locale=zh_TW&amp;href=https://" + location.hostname + location.pathname + "&amp;layout=button_count&amp;action=like&amp;colorscheme=light&amp;share=true"; this.onload="";'></iframe>		
+	<div class='g-plusone' data-size='medium'></div>
+	
+  </div>
+  <br/>
+  
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://salu099.github.io/blog/2018/03/2016-japan-kyoto-maple-komyoji/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://salu099.github.io/blog/2018/03/2016-japan-kyoto-maple-komyoji/">2016/12 日本京都小旅行 - 光明寺</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://salu099.github.io/blog/2018/03/2016-japan-kyoto-maple-rokuoin/">2016/12 日本京都小旅行 - 鹿王院</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://salu099.github.io/blog/2018/03/2016-japan-kyoto-maple-rokuoin/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+<br/>
+<div id="disqusbtn"><button class="show-comments" >留言</button></div>
+<br/>
+
+<div id="disqus_thread"></div>
+
+
+
+
+
+    
+    
+    
+        
+
+    
+    
+    
+    
+
+
+
+
+
+
+
+</div>
+
+</div>
+</div>
+<script src="https://salu099.github.io/blog/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-106389797-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

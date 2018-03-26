@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mongodb on 小卷的胡言亂語</title>
+    <link>https://salu099.github.io/blog/tags/mongodb/</link>
+    <description>Recent content in Mongodb on 小卷的胡言亂語</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>Salu099 &amp;copy; 2017. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 26 Mar 2018 23:05:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://salu099.github.io/blog/tags/mongodb/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>使用c#連接mongodb雲端資料庫 - (一)簡介</title>
+      <link>https://salu099.github.io/blog/2018/03/blog-csharp-mongodb-intro/</link>
+      <pubDate>Mon, 26 Mar 2018 23:05:00 +0800</pubDate>
+      
+      <guid>https://salu099.github.io/blog/2018/03/blog-csharp-mongodb-intro/</guid>
+      <description>&lt;p&gt;這陣子研究了一下如何使用c#連接mongodb雲端資料庫，紀錄一下心得。&lt;br /&gt;
+首先先從幾項工具開始介紹吧。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

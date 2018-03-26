@@ -2,7 +2,7 @@ body {
     color: #777;
 	/* 2017/8 post main section font setting start*/
 	font-family: Microsoft YaHei,"微軟正黑體", "Microsoft JhengHei"; 	
-	font-size: 0.95em;  
+	font-size: 1em;/* font-size: 0.95em;   */
 	/* 2017/8 post main section font setting end*/
 }
 

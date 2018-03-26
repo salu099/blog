@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>部落格建置 on 小卷的胡言亂語</title>
+    <link>https://salu099.github.io/blog/topics/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%BB%BA%E7%BD%AE/</link>
+    <description>Recent content in 部落格建置 on 小卷的胡言亂語</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>Salu099 &amp;copy; 2017. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 13 Nov 2017 22:22:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://salu099.github.io/blog/topics/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%BB%BA%E7%BD%AE/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>部落格搬遷紀錄~部落格建置(hugo&#43;github)</title>
+      <link>https://salu099.github.io/blog/2017/11/blog-newsite-build-record/</link>
+      <pubDate>Mon, 13 Nov 2017 22:22:00 +0800</pubDate>
+      
+      <guid>https://salu099.github.io/blog/2017/11/blog-newsite-build-record/</guid>
+      <description>&lt;p&gt;記錄一下部落格搬家的建置過程。&lt;br /&gt;
+* 架構：hugo(0.24)&lt;br /&gt;
+* 佈署：github&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>部落格搬遷紀錄~平台選擇</title>
+      <link>https://salu099.github.io/blog/2017/09/blog-newsite-record-1/</link>
+      <pubDate>Fri, 22 Sep 2017 23:05:00 +0800</pubDate>
+      
+      <guid>https://salu099.github.io/blog/2017/09/blog-newsite-record-1/</guid>
+      <description>&lt;p&gt;為慶賀部落格新站開張，先來紀錄一下部落格搬家的點滴(血淚史無誤XD)。&lt;br /&gt;
+這篇主要記錄平台的選擇(文多)&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
