@@ -2,7 +2,7 @@
 
 
 <html lang="zh-tw">
-<meta content="c#, mongodb, 雲端資料庫" name="keywords">
+<meta content="c#, mongodb, 雲端資料庫, 教學" name="keywords">
 
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -507,7 +507,7 @@ function comparison(fdname){
 
     
 
-    
+      
 
     
 
@@ -578,13 +578,19 @@ function comparison(fdname){
     
 	
 	
+	<li class="pure-menu-item">
+		<a class = "pure-menu-link sociallink" href="https://travel98.com/member/90800/article" target="_blank"><i class="fa fa-plane fa-fw" data-fa-transform="rotate-90"></i>Travel98</a>
+	</li>
+	
+	
+	
     <li class="pure-menu-item">
 	
       
 	  <a class="pure-menu-link sociallink" href="https://github.com/salu099" target="_blank"><i class="fa fa-github fa-fw"></i>GitHub</a>
 	  
     </li>
-    
+    	
 	
 	
 	
@@ -632,11 +638,11 @@ function comparison(fdname){
   
   
   <div class="small-print">
-    <small>Salu099 &copy; 2017. All rights reserved.</small>	
+    <small>Salu099 &copy; 2018. All rights reserved.</small>	
   </div>
   <div class="small-print">
-    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
-    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+    
+    
 	
 	<br/><br/>
 	
@@ -746,7 +752,7 @@ function comparison(fdname){
 <br /></li>
 </ul>
 
-<p>mongodb為一open source的NoSQL資料庫，由key+value組成(Dictionary的概念)，<br />
+<p>mongodb為一open source的NoSQL資料庫，由key+value組成(類似c# Dictionary的概念)，<br />
 結構類似JSON，是一種稱作BSON的結構；除雲端版外，亦有電腦版可下載至本機使用。<br />
 在mongodb中，一筆資料為document，資料表為collection，亦即由documents組成。<br />
 欄位為field，每一筆資料可以由一個至多個欄位組成(不一定每筆資料的欄位數相同)。<br />
@@ -773,7 +779,7 @@ function comparison(fdname){
   <img src='https://lh3.googleusercontent.com/-9aRzcaFrrME/WrjMlCNJlsI/AAAAAAAAWK4/GLCjUUQ6WTk3StbVq6rtk2wS-ZO8yPFbQCHMYBhgL/s800/mlabregister_5.jpg' alt='mongodb mlab registar' /><br/><br />
 (3)建立好資料庫以後，請建立使用者<br />
   <img src='https://lh3.googleusercontent.com/-SV5mlSboHNk/WrjMmJcVJnI/AAAAAAAAWLA/QrrwuV1_j5oiPjdfJZRoork2jM5cIE-_ACHMYBhgL/s800/mlabregister_6.jpg' alt='mongodb mlab registar' /><br/><br />
-(4)回到使用者介面，看到上方區塊提供了連線字串(其中username、password就是剛剛你建立的使用者資訊)，之後程式就能以此與資料庫做互動<br />
+(4)回到使用者介面，看到上方區塊提供了連線字串(其中dbuser、dbpassword可以剛剛建立的使用者資訊填入)，之後程式就能以此與資料庫做互動<br />
   <img src='https://lh3.googleusercontent.com/-W3zz2A1g5zI/WrjMmkN-xRI/AAAAAAAAWLE/m5NUp_zTwfAGTVmfuq73hso9AKixWpWywCHMYBhgL/s800/mlabregister_7.jpg' alt='mongodb mlab registar' /><br/></p>
 
 <h3 id="2-robo3t">2、robo3T</h3>
@@ -804,7 +810,7 @@ function comparison(fdname){
 
 <p>官方文件對於基本使用的說明蠻清楚的，另因為mongodb .net driver舊版本與新版本差異頗大，<br />
 故建議有開發需求者，還是看官方文件吧，<br />
-網路上多數的教學文都是較舊版本，無法使用於新版driver。<br />
+網路上多數的教學文都是較舊版本driver，無法使用於新版driver。<br />
 以下說明一下傻露參考的幾份文件：</p>
 
 <ul>
