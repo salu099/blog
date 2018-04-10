@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Salu099 &amp;copy; 2018. All rights reserved.</copyright>
-    <lastBuildDate>Mon, 26 Mar 2018 23:15:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 10 Apr 2018 23:10:00 +0800</lastBuildDate>
     
 	<atom:link href="https://salu099.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2016/12 日本京都小旅行 - 北野天滿宮御土居賞楓</title>
+      <link>https://salu099.github.io/blog/2018/04/2016-japan-kyoto-maple-kitanotenmangu/</link>
+      <pubDate>Tue, 10 Apr 2018 23:10:00 +0800</pubDate>
+      
+      <guid>https://salu099.github.io/blog/2018/04/2016-japan-kyoto-maple-kitanotenmangu/</guid>
+      <description>&lt;p&gt;短暫休息了一下，繼續前往下一個景點，北野天滿宮。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>2016/12 日本京都小旅行 - 鹿王院</title>
@@ -105,9 +114,7 @@ anyway，還是紀錄一下光明寺的(不夠紅的)紅葉囉。&lt;/p&gt;</des
       <pubDate>Mon, 13 Nov 2017 22:22:00 +0800</pubDate>
       
       <guid>https://salu099.github.io/blog/2017/11/blog-newsite-build-record/</guid>
-      <description>&lt;p&gt;記錄一下部落格搬家的建置過程。&lt;br /&gt;
-* 架構：hugo(0.24)&lt;br /&gt;
-* 佈署：github&lt;/p&gt;</description>
+      <description></description>
     </item>
     
     <item>
