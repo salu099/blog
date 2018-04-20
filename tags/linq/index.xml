@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linq on 小卷的胡言亂語</title>
+    <link>https://salu099.github.io/blog/tags/linq/</link>
+    <description>Recent content in Linq on 小卷的胡言亂語</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>Salu099 &amp;copy; 2018. All rights reserved.</copyright>
+    <lastBuildDate>Fri, 20 Apr 2018 23:10:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://salu099.github.io/blog/tags/linq/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>使用c#連接mongodb雲端資料庫 - (三)資料查詢</title>
+      <link>https://salu099.github.io/blog/2018/04/blog-csharp-mongodb-query/</link>
+      <pubDate>Fri, 20 Apr 2018 23:10:00 +0800</pubDate>
+      
+      <guid>https://salu099.github.io/blog/2018/04/blog-csharp-mongodb-query/</guid>
+      <description>&lt;p&gt;承&lt;a href=&#34;https://salu099.github.io/blog/2018/04/blog-csharp-mongodb-insert/&#34; target=&#34;_blank&#34;&gt;上篇&lt;/a&gt;，本篇主要紀錄c#連接mongodb，對資料庫的查詢&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
