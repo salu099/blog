@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Salu099 &amp;copy; 2018. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 15 Jun 2018 23:10:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 27 Aug 2018 23:10:00 +0800</lastBuildDate>
     
 	<atom:link href="https://salu099.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2016/12 日本京都小旅行 - 世界文化遺產下鴨神社</title>
+      <link>https://salu099.github.io/blog/2018/08/2016-japan-kyoto-maple-kamomioyajinjia/</link>
+      <pubDate>Mon, 27 Aug 2018 23:10:00 +0800</pubDate>
+      
+      <guid>https://salu099.github.io/blog/2018/08/2016-japan-kyoto-maple-kamomioyajinjia/</guid>
+      <description>&lt;p&gt;繼續掰咖的旅程&amp;hellip;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>使用c#連接google photos api實作</title>
@@ -150,7 +159,7 @@ anyway，還是紀錄一下光明寺的(不夠紅的)紅葉囉。&lt;/p&gt;</des
     </item>
     
     <item>
-      <title>部落格搬遷紀錄~部落格建置(hugo&#43;github)</title>
+      <title>部落格搬遷記錄~部落格建置(hugo&#43;github)</title>
       <link>https://salu099.github.io/blog/2017/11/blog-newsite-build-record/</link>
       <pubDate>Mon, 13 Nov 2017 22:22:00 +0800</pubDate>
       
