@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Salu099 &amp;copy; 2018. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 15 Jun 2018 23:10:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 26 Dec 2018 23:10:00 +0800</lastBuildDate>
     
 	<atom:link href="https://salu099.github.io/blog/tags/httpwebrequest/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vue自訂分頁-以MVC C#為例</title>
+      <link>https://salu099.github.io/blog/2018/12/csharp-mvc-vue-pagination/</link>
+      <pubDate>Wed, 26 Dec 2018 23:10:00 +0800</pubDate>
+      
+      <guid>https://salu099.github.io/blog/2018/12/csharp-mvc-vue-pagination/</guid>
+      <description>&lt;p&gt;近期在學習並使用Vue.js，剛好有做資料分頁的需求，雖說網路上流傳著不少好用元件以及範例程式碼，但因為傻露的需求可能比較特別，老是找不到合意的，故最後就決定自己刻啦。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>使用c#連接google photos api實作</title>
