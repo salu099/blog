@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Salu099 &amp;copy; 2018. All rights reserved.</copyright>
-    <lastBuildDate>Wed, 26 Dec 2018 23:10:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 27 Dec 2018 23:10:00 +0800</lastBuildDate>
     
 	<atom:link href="https://salu099.github.io/blog/tags/pagination/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vue使用Componet自訂分頁-以MVC C#實做</title>
+      <link>https://salu099.github.io/blog/2018/12/csharp-mvc-vue-component-pagination/</link>
+      <pubDate>Thu, 27 Dec 2018 23:10:00 +0800</pubDate>
+      
+      <guid>https://salu099.github.io/blog/2018/12/csharp-mvc-vue-component-pagination/</guid>
+      <description>&lt;p&gt;請參考前文：&lt;a href=&#34;https://salu099.github.io/blog/2018/12/csharp-mvc-vue-pagination/&#34; target=&#34;_blank&#34;&gt;Vue 自訂分頁 - 以 MVC C# 實做&lt;/a&gt;。&lt;br /&gt;
+前一篇文章記錄了用Vue.js自刻分頁，後來因重複使用的需求故改寫為Component，就在這篇文章紀錄一下啦。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Vue自訂分頁-以MVC C#實做</title>
