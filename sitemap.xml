@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://salu099.github.io/blog/2019/01/2018-japan-hokuriku-summer/</loc>
+    <lastmod>2019-01-24T22:25:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://salu099.github.io/blog/2018/12/csharp-mvc-vue-component-pagination/</loc>
     <lastmod>2018-12-27T23:10:00+08:00</lastmod>
   </url>
@@ -617,6 +622,12 @@
   </url>
   
   <url>
+    <loc>https://salu099.github.io/blog/topics/2018%E5%8C%97%E9%99%B8/</loc>
+    <lastmod>2019-01-24T22:25:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://salu099.github.io/blog/tags/435%E8%97%9D%E6%96%87%E7%89%B9%E5%8D%80/</loc>
     <lastmod>2013-09-17T21:10:00+08:00</lastmod>
     <priority>0</priority>
@@ -756,7 +767,7 @@
   
   <url>
     <loc>https://salu099.github.io/blog/post/</loc>
-    <lastmod>2018-12-27T23:10:00+08:00</lastmod>
+    <lastmod>2019-01-24T22:25:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -871,6 +882,12 @@
   <url>
     <loc>https://salu099.github.io/blog/tags/%E4%B8%89%E6%9D%A1/</loc>
     <lastmod>2018-08-30T23:10:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://salu099.github.io/blog/tags/%E4%B8%8A%E9%AB%98%E5%9C%B0/</loc>
+    <lastmod>2019-01-24T22:25:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1069,6 +1086,12 @@
   <url>
     <loc>https://salu099.github.io/blog/tags/%E5%8C%97%E9%87%8E%E5%A4%A9%E6%BB%BF%E5%AE%AE%E5%BE%A1%E5%9C%9F%E5%B1%85/</loc>
     <lastmod>2018-04-10T23:10:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://salu099.github.io/blog/tags/%E5%8C%97%E9%99%B8/</loc>
+    <lastmod>2019-01-24T22:25:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1470,7 +1493,7 @@
   
   <url>
     <loc>https://salu099.github.io/blog/</loc>
-    <lastmod>2018-12-27T23:10:00+08:00</lastmod>
+    <lastmod>2019-01-24T22:25:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1680,7 +1703,7 @@
   
   <url>
     <loc>https://salu099.github.io/blog/tags/%E6%97%A5%E6%9C%AC/</loc>
-    <lastmod>2018-09-07T23:10:00+08:00</lastmod>
+    <lastmod>2019-01-24T22:25:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2280,7 +2303,7 @@
   
   <url>
     <loc>https://salu099.github.io/blog/tags/%E8%A1%8C%E7%A8%8B/</loc>
-    <lastmod>2017-12-16T16:25:00+08:00</lastmod>
+    <lastmod>2019-01-24T22:25:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2401,6 +2424,12 @@
   <url>
     <loc>https://salu099.github.io/blog/tags/%E9%87%91%E5%B1%B1/</loc>
     <lastmod>2013-07-18T23:15:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://salu099.github.io/blog/tags/%E9%87%91%E6%BE%A4/</loc>
+    <lastmod>2019-01-24T22:25:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
