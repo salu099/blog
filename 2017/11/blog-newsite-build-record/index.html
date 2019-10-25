@@ -738,6 +738,7 @@ function comparison(fdname){
 4. 設置path資訊：<br />
    <strong>本機電腦 &gt; 開始 &gt; 我的電腦(按下右鍵) &gt; 內容 &gt; 進階系統設定 &gt; 進階頁籤、環境變數<br />
    找到PATH的參數，按下編輯，加入【C:\Hugo\bin】後關閉視窗</strong><br />
+   【註】：win10環境請由**檔案總管 &gt; 找到左側面板之&rdquo;本機&rdquo; &gt; 滑鼠右鍵點按&rdquo;內容&rdquo; **進入進階系統設定<br />
 5. 重新開機<br />
 6. 確認Hugo安裝成功，開啟cmd輸入：</p>
 
@@ -803,6 +804,7 @@ function comparison(fdname){
 </code></pre>
 
 <p>(其中xxx是你挑好的theme名稱)<br />
+【註】：若電腦內無安裝git，將無法使用git指令下載版型，故建議可以先至<a href="https://git-scm.com/downloads" target="_blank">git官網</a>下載及安裝<br />
 下載後，再請hugo幫我們轉譯，輸入：</p>
 
 <pre><code>hugo server --theme=xxx  --buildDrafts  
